@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game with HTML5 Canvas</title>
+    <script type="text/javascript">
+        // this function will be called once the page loads completely.
+        function pageLoaded() {
+            // get a handle to the canvas object
+            var canvas = document.getElementById('testcanvas');
+
+            // get the 2d context for this canvas
+            var context = canvas.getContext('2d');
+
+            // drawing a filled rectangles
+            // draw a solid square with width/height of 100px at (200, 10)
+            context.context.fillRect(200, 10, 100, 100);
+
+            // draw a solid square with width of 90px and height of 30px at (50, 70)
+            context.fillRect(50, 70, 90, 30)
+            
+        }
+    </script>
+</head>
+<body onload="pagedLoaded();"> 
+   <canvas width="640" height="480" id="testcanvas" style="border: 1px solid black;">
+        Your browser does not support HTML5 Canvas. Please shift to new browser.
+   </canvas> 
+</body>
+</html>
